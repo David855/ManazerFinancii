@@ -1,0 +1,64 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>KategoriaDao - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.example.manazerfinancii.databaza</a>&nbsp;/&nbsp;<a href="./index.html">KategoriaDao</a><br/>
+<br/>
+<h1>KategoriaDao</h1>
+<code><span class="keyword">interface </span><span class="identifier">KategoriaDao</span></code>
+<p>Interface Dao pre prácu s tabuľkou kategoria</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="get-all-categories.html">getAllCategories</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getAllCategories</span><span class="symbol">(</span><span class="identifier" id="com.example.manazerfinancii.databaza.KategoriaDao$getAllCategories(kotlin.Int)/typ">typ</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-kategoria/index.html"><span class="identifier">Kategoria</span></a><span class="symbol">&gt;</span></code>
+<p>Získanie všetkych kategórií podľa typu položky</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-all-categories-name.html">getAllCategoriesName</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getAllCategoriesName</span><span class="symbol">(</span><span class="identifier" id="com.example.manazerfinancii.databaza.KategoriaDao$getAllCategoriesName(kotlin.Int)/typ">typ</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code>
+<p>Získanie mien všetkých kategórií podľa typu položky</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-category-by-id.html">getCategoryById</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getCategoryById</span><span class="symbol">(</span><span class="identifier" id="com.example.manazerfinancii.databaza.KategoriaDao$getCategoryById(kotlin.Int, kotlin.Int)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.example.manazerfinancii.databaza.KategoriaDao$getCategoryById(kotlin.Int, kotlin.Int)/typ">typ</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-kategoria/index.html"><span class="identifier">Kategoria</span></a></code>
+<p>Získanie kategórie na základe id</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-num-of-categories.html">getNumOfCategories</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getNumOfCategories</span><span class="symbol">(</span><span class="identifier" id="com.example.manazerfinancii.databaza.KategoriaDao$getNumOfCategories(kotlin.Int)/typ">typ</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
+<p>Vrátenie počtu kategórií na základe typu položky</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="write-kategoria.html">writeKategoria</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">writeKategoria</span><span class="symbol">(</span><span class="identifier" id="com.example.manazerfinancii.databaza.KategoriaDao$writeKategoria(com.example.manazerfinancii.databaza.Kategoria)/kategoria">kategoria</span><span class="symbol">:</span>&nbsp;<a href="../-kategoria/index.html"><span class="identifier">Kategoria</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Vloženie kategórie do databázy</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

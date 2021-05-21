@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightGray"
+        android:padding="10dp"
+        tools:context=".grafickeRozhrania.DetailFragment">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="800dp"
+            android:background="@drawable/background_radius"
+            android:paddingBottom="24dp">
+
+            <TextView
+                android:id="@+id/detail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:textColor="@color/lightblack"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/detail_icon"
+                app:layout_constraintTop_toTopOf="@+id/detail_icon"
+                tools:text="Výplata z roboty" />
+
+            <ImageView
+                android:id="@+id/detail_icon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/kat_prijmy_praca"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="TODO" />
+
+            <TextView
+                android:id="@+id/detail_suma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/lightblack"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/detail_title"
+                app:layout_constraintStart_toStartOf="@+id/detail_title"
+                app:layout_constraintTop_toBottomOf="@+id/detail_title"
+                tools:text="1200€" />
+
+            <TextView
+                android:id="@+id/detail_popis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:justificationMode="inter_word"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:textColor="@color/lightblack"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detail_popis_textview"
+                tools:targetApi="o"
+                tools:text="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged." />
+
+            <TextView
+                android:id="@+id/detail_prostriedok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/lightblack"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detail_popis"
+                tools:text="@string/bankovy_ucet" />
+
+            <TextView
+                android:id="@+id/detail_datum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:textColor="@color/lightblack"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/detail_prostriedok"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/detail_prostriedok"
+                tools:text="25.04.2021" />
+
+            <TextView
+                android:id="@+id/detail_kategoria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/lightblack"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/detail_icon"
+                app:layout_constraintStart_toStartOf="@+id/detail_icon"
+                app:layout_constraintTop_toBottomOf="@+id/detail_icon"
+                tools:text="Práca" />
+
+            <TextView
+                android:id="@+id/detail_popis_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="40dp"
+                android:text="@string/prid_popis"
+                android:textColor="@color/lightblack"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detail_kategoria" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

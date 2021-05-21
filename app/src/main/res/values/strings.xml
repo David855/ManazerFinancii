@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">Finančný Manažér</string>
+    <string name="text_prehlad">Prehľad</string>
+    <string name="text_prijmy">Príjmy</string>
+    <string name="text_vydavky">Výdavky</string>
+    <string name="text_setrenie">Šetrenie</string>
+    <string name="text_nastavenia">Nastavenia</string>
+
+    <string name="navigation_open">Otvorenie navigacie</string>
+    <string name="navigation_close">Zatvorenie navigacie</string>
+    <string name="button">Tlačidlo</string>
+
+    <string name="zhrnutie">Zhrnutie</string>
+    <string name="text_celkom">Celkom</string>
+    <string name="stav_setrenie">Stav šetrenia</string>
+    <string name="stav_na_setreni">Stav na šetrení</string>
+
+    <string name="prostriedky">Prostriedky</string>
+    <string name="hotovost">Hotovosť</string>
+    <string name="bankovy_ucet">Bankový účet</string>
+    <string name="naposledy_pouzite">Naposledy použité:</string>
+
+
+    <string name="close_app">Ukončenie aplikácie</string>
+    <string name="close_app_dialog">Naozaj chceš ukončiť aplikáciu ?</string>
+    <string name="close_app_yes">Áno</string>
+    <string name="close_app_no">Nie</string>
+
+
+    <string name="prid_nazov">Názov:</string>
+    <string name="prid_popis">Popis:</string>
+    <string name="prid_suma">Suma:</string>
+    <string name="prid_prostriedok">Prostriedok:</string>
+    <string name="prid_kategoria">Kategória:</string>
+    <string name="prid_button">Pridať</string>
+
+    <string name="prid_na_setrenie">Pridať na šetrenie</string>
+
+    <string name="nedostatokPenazi">Nedostatok peňazí na danom prostriedku</string>
+    <string name="percentzprijmu">Koľko % príjmu pôjdu na šetrenie</string>
+
+    <string name="ziadnesetrenie">Žiadne šetrenie</string>
+    <string name="vymazanie_polozky">Vymazanie položky</string>
+    <string name="vymazanie_otazka">Naoazj chceš vymazať túto položku ?</string>
+
+    <string name="filter_chyba">Nemáš označené podľa čoho chceš filtrovať</string>
+
+    <string-array name="prid_prostriedky">
+        <item>Bankový účet</item>
+        <item>Peňaženka</item>
+    </string-array>
+    <string-array name="prid_kat_prijmy">
+        <item>Práca</item>
+        <item>Brigáda</item>
+    </string-array>
+
+    <string-array name="mesiace">
+        <item>Január</item>
+        <item>Február</item>
+        <item>Marec</item>
+        <item>Apríl</item>
+        <item>Máj</item>
+        <item>Jún</item>
+        <item>Jul</item>
+        <item>August</item>
+        <item>September</item>
+        <item>Október</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <integer-array name="percenta_setrenie">
+        <item>2</item>
+        <item>4</item>
+        <item>5</item>
+        <item>10</item>
+        <item>12</item>
+        <item>15</item>
+        <item>18</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+    </integer-array>
+
+    <string name="notifikacie">Notifikácie</string>
+    <string name="notifikacie_zobr">Zobrazenie notifikácie</string>
+    <string name="nastavenia_save">Uložiť</string>
+    <string name="notifikaciaOnOFF">1</string>
+
+    <string name="pref_name">NastaveniaSetting</string>
+    <string name="nastavenia_saved">Nastavenia boli úspešne uložené</string>
+
+
+    <string name="filter_pod_obd">Podľa obdobia:</string>
+    <string name="filter_pod_dat">Podľa dátumu:</string>
+    <string name="filter_pod_pros">Podľa prostriedku:</string>
+    <string name="filter_pod_kat">Podľa kategórie:</string>
+
+    <string name="filter_rok">Rok</string>
+    <string name="filter_mesiac">Mesiac</string>
+    <string name="filter_tyzden">Týždeň</string>
+
+    <string name="filter_zaciatok">Začiatok:</string>
+    <string name="filter_koniec">Ukončenie:</string>
+
+    <string name="filter_tlacidlo">Filtrovať</string>
+
+
+    /*nazvy fragmentov*/
+
+    <string name="fragment_prehlad">Prehľad</string>
+    <string name="fragment_prijmy">Príjmy</string>
+    <string name="fragment_vydavky">Výdavky</string>
+    <string name="fragment_setrenie">Šetrenie</string>
+    <string name="fragment_nastavenia">Nastavenia</string>
+    <string name="fragment_pridat">Pridať príjem/výdavok</string>
+    <string name="fragment_detail">Detail</string>
+    <string name="fragment_filter">Filter</string>
+
+    <string name="nevyplnene">Nezadal si všetky údaje</string>
+
+
+    <string name="notifikacia_prehlad_dobre">Tento mesiac ste zatiaľ v pluse.</string>
+    <string name="notifikacia_prehlad_zle">Tento mesiac ste sa dostali do mínusu !!!</string>
+
+
+</resources>

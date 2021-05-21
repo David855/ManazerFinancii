@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialKeyguardLayout="@layout/setrenie_widget"
+    android:initialLayout="@layout/setrenie_widget"
+    android:minWidth="110dp"
+    android:minHeight="40dp"
+    android:previewImage="@drawable/setrenie"
+
+    android:updatePeriodMillis="1000"
+    android:widgetCategory="home_screen"></appwidget-provider>

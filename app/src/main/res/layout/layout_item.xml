@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/white"
+    android:foreground="?attr/selectableItemBackground"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="2dp"
+        android:text="Výplata z roboty"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/item_icon"
+        app:layout_constraintTop_toTopOf="@+id/item_icon" />
+
+    <ImageView
+        android:id="@+id/item_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kat_prijmy_praca" />
+
+    <TextView
+        android:id="@+id/item_prostriedok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="2dp"
+        android:text="Bankový účet"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/item_icon"
+        app:layout_constraintStart_toStartOf="@+id/item_title"
+        app:layout_constraintTop_toBottomOf="@+id/item_title" />
+
+    <ImageView
+        android:id="@+id/item_obdlznik"
+        android:layout_width="10dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/item_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/item_icon"
+        app:srcCompat="@drawable/prijmysquare" />
+
+    <TextView
+        android:id="@+id/item_suma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="16dp"
+        android:text="1 200€"
+        android:textColor="@color/green"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/item_obdlznik"
+        app:layout_constraintTop_toTopOf="@+id/item_obdlznik" />
+
+    <TextView
+        android:id="@+id/item_datum"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="2dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="10.04.2021"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/item_obdlznik"
+        app:layout_constraintEnd_toStartOf="@+id/item_obdlznik" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+$dokka.format:html
+$dokka.linkExtension:html
+$dokka.location:com.example.manazerfinancii$formatFloatToString(kotlin.Float)com.example.manazerfinancii/kotlin.-float/format-float-to-string.html
+$dokka.location:com.example.manazerfinancii$toMyDate(java.util.Date)com.example.manazerfinancii/java.util.-date/to-my-date.html
+com.example.manazerfinancii
+com.example.manazerfinancii.adaptery
+com.example.manazerfinancii.databaza
+com.example.manazerfinancii.grafickeRozhrania
+com.example.manazerfinancii.notifikacie
+com.example.manazerfinancii.widgety

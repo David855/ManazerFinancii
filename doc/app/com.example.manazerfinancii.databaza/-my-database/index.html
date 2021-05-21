@@ -1,0 +1,76 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>MyDatabase - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.example.manazerfinancii.databaza</a>&nbsp;/&nbsp;<a href="./index.html">MyDatabase</a><br/>
+<br/>
+<h1>MyDatabase</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">MyDatabase</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">RoomDatabase</span></code>
+<p>Databáza
+Skladá sa z tabuľky polozka, kategoria a setrenie</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">MyDatabase</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>Databáza
+Skladá sa z tabuľky polozka, kategoria a setrenie</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="kategoria-dao.html">kategoriaDao</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">kategoriaDao</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-kategoria-dao/index.html"><span class="identifier">KategoriaDao</span></a></code>
+<p>Kategoria dao</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="polozka-dao.html">polozkaDao</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">polozkaDao</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-polozka-dao/index.html"><span class="identifier">PolozkaDao</span></a></code>
+<p>Polozka dao</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="setrenie-dao.html">setrenieDao</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">setrenieDao</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-setrenie-dao/index.html"><span class="identifier">SetrenieDao</span></a></code>
+<p>Setrenie dao</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="get-database.html">getDatabase</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getDatabase</span><span class="symbol">(</span><span class="identifier" id="com.example.manazerfinancii.databaza.MyDatabase.Companion$getDatabase(android.content.Context)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MyDatabase</span></a></code>
+<p>Get database</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,106 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Polozka - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.example.manazerfinancii.databaza</a>&nbsp;/&nbsp;<a href="./index.html">Polozka</a><br/>
+<br/>
+<h1>Polozka</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Polozka</span></code>
+<p>Dátová trieda, ktorá predstavuje položku
+Taktiež je to entita databázy</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">Polozka</span><span class="symbol">(</span><span class="identifier" id="com.example.manazerfinancii.databaza.Polozka$<init>(kotlin.Int, kotlin.Int, kotlin.String, kotlin.String, kotlin.Int, kotlin.Float, kotlin.String, java.util.Date)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.example.manazerfinancii.databaza.Polozka$<init>(kotlin.Int, kotlin.Int, kotlin.String, kotlin.String, kotlin.Int, kotlin.Float, kotlin.String, java.util.Date)/typ">typ</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.example.manazerfinancii.databaza.Polozka$<init>(kotlin.Int, kotlin.Int, kotlin.String, kotlin.String, kotlin.Int, kotlin.Float, kotlin.String, java.util.Date)/nazov">nazov</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.example.manazerfinancii.databaza.Polozka$<init>(kotlin.Int, kotlin.Int, kotlin.String, kotlin.String, kotlin.Int, kotlin.Float, kotlin.String, java.util.Date)/popis">popis</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.example.manazerfinancii.databaza.Polozka$<init>(kotlin.Int, kotlin.Int, kotlin.String, kotlin.String, kotlin.Int, kotlin.Float, kotlin.String, java.util.Date)/kategoria">kategoria</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.example.manazerfinancii.databaza.Polozka$<init>(kotlin.Int, kotlin.Int, kotlin.String, kotlin.String, kotlin.Int, kotlin.Float, kotlin.String, java.util.Date)/suma">suma</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="com.example.manazerfinancii.databaza.Polozka$<init>(kotlin.Int, kotlin.Int, kotlin.String, kotlin.String, kotlin.Int, kotlin.Float, kotlin.String, java.util.Date)/prostriedok">prostriedok</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.example.manazerfinancii.databaza.Polozka$<init>(kotlin.Int, kotlin.Int, kotlin.String, kotlin.String, kotlin.Int, kotlin.Float, kotlin.String, java.util.Date)/datum">datum</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/java/util/Date.html"><span class="identifier">Date</span></a><span class="symbol">)</span></code>
+<p>Vytvorenie položky</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="datum.html">datum</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">datum</span><span class="symbol">: </span><a href="https://developer.android.com/reference/java/util/Date.html"><span class="identifier">Date</span></a></code>
+<p>datum pridania položky</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="id.html">id</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">id</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
+<p>id polozky</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="kategoria.html">kategoria</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">kategoria</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
+<p>kategoria položky</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="nazov.html">nazov</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">nazov</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code>
+<p>nazov položky</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="popis.html">popis</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">popis</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code>
+<p>popis položky</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="prostriedok.html">prostriedok</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">prostriedok</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code>
+<p>prostriedok</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="suma.html">suma</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">suma</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code>
+<p>suma položky</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="typ.html">typ</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">typ</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
+<p>typ položky</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

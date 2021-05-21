@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightGray"
+        tools:context=".grafickeRozhrania.AddFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/prehlad_setrenie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/background_radius">
+
+            <EditText
+                android:id="@+id/pridanie_nazov"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:hint="Názov"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/pridanie_n"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/pridanie_n" />
+
+            <TextView
+                android:id="@+id/pridanie_n"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/prid_nazov"
+                android:textColor="@color/lightblack"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/pridanie_p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/prid_popis"
+                android:textColor="@color/lightblack"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/pridanie_n"
+                app:layout_constraintTop_toTopOf="@+id/pridanie_popis" />
+
+            <EditText
+                android:id="@+id/pridanie_popis"
+                android:layout_width="212dp"
+                android:layout_height="108dp"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Popis"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/pridanie_nazov"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/pridanie_nazov"
+                app:layout_constraintTop_toBottomOf="@+id/pridanie_nazov" />
+
+            <TextView
+                android:id="@+id/pridanie_s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/prid_suma"
+                android:textColor="@color/lightblack"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/pridanie_p"
+                app:layout_constraintTop_toBottomOf="@+id/pridanie_popis" />
+
+            <EditText
+                android:id="@+id/pridanie_suma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/pridanie_s"
+                app:layout_constraintEnd_toEndOf="@+id/pridanie_popis"
+                app:layout_constraintStart_toStartOf="@+id/pridanie_popis"
+                app:layout_constraintTop_toTopOf="@+id/pridanie_s" />
+
+            <TextView
+                android:id="@+id/pridanie_pr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/prid_prostriedok"
+                android:textColor="@color/lightblack"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/pridanie_s"
+                app:layout_constraintTop_toBottomOf="@+id/pridanie_suma" />
+
+            <Spinner
+                android:id="@+id/pridanie_prostriedok"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/prid_prostriedky"
+                android:padding="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/pridanie_pr"
+                app:layout_constraintEnd_toEndOf="@+id/pridanie_suma"
+                app:layout_constraintStart_toStartOf="@+id/pridanie_suma"
+                app:layout_constraintTop_toTopOf="@+id/pridanie_pr" />
+
+            <Spinner
+                android:id="@+id/pridanie_kategoria"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/prid_kat_prijmy"
+                android:padding="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/pridanie_kat"
+                app:layout_constraintEnd_toEndOf="@+id/pridanie_prostriedok"
+                app:layout_constraintStart_toStartOf="@+id/pridanie_prostriedok"
+                app:layout_constraintTop_toTopOf="@+id/pridanie_kat" />
+
+            <TextView
+                android:id="@+id/pridanie_kat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/prid_kategoria"
+                android:textColor="@color/lightblack"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/pridanie_pr"
+                app:layout_constraintTop_toBottomOf="@+id/pridanie_prostriedok" />
+
+            <Button
+                android:id="@+id/pridanie_tlacidlo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/color_primary"
+                android:text="@string/prid_button"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/pridanie_kategoria"
+                app:layout_constraintHorizontal_bias="0.2"
+                app:layout_constraintStart_toStartOf="@+id/pridanie_kat"
+                app:layout_constraintTop_toBottomOf="@+id/pridanie_kategoria"
+                app:layout_constraintVertical_bias="0.55" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</layout>

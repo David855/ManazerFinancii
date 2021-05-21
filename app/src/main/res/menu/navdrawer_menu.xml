@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+    android:id="@+id/group1"
+    android:checkableBehavior="single">
+    <item
+        android:id="@+id/item_prehlad"
+        android:icon="@drawable/icon_home"
+        android:title="@string/text_prehlad" />
+    <item
+        android:id="@+id/item_prijmy"
+        android:icon="@drawable/icon_prijmy"
+        android:title="@string/text_prijmy" />
+    <item
+        android:id="@+id/item_vydavky"
+        android:icon="@drawable/icon_vydavky"
+        android:title="@string/text_vydavky" />
+    <item
+        android:id="@+id/item_setrenie"
+        android:icon="@drawable/icon_setrenie"
+        android:title="@string/text_setrenie" />
+    </group>
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_nastavenia"
+            android:icon="@drawable/icon_setting"
+            android:title="@string/text_nastavenia" />
+
+    </group>
+</menu>

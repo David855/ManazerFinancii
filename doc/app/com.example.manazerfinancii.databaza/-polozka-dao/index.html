@@ -1,0 +1,190 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PolozkaDao - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.example.manazerfinancii.databaza</a>&nbsp;/&nbsp;<a href="./index.html">PolozkaDao</a><br/>
+<br/>
+<h1>PolozkaDao</h1>
+<code><span class="keyword">interface </span><span class="identifier">PolozkaDao</span></code>
+<p>Interface Dao pre prácu s tabuľkou polozka</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="delete-polozka.html">deletePolozka</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">deletePolozka</span><span class="symbol">(</span><span class="identifier" id="com.example.manazerfinancii.databaza.PolozkaDao$deletePolozka(kotlin.Int)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Vymazanie položky na základe id</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-all-polozky.html">getAllPolozky</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getAllPolozky</span><span class="symbol">(</span><span class="identifier" id="com.example.manazerfinancii.databaza.PolozkaDao$getAllPolozky(kotlin.Int)/typ">typ</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-polozka/index.html"><span class="identifier">Polozka</span></a><span class="symbol">&gt;</span></code>
+<p>Vrátenie všetkých položiek na základe typu</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-all-polozky-by-between-date.html">getAllPolozkyByBetweenDate</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getAllPolozkyByBetweenDate</span><span class="symbol">(</span><span class="identifier" id="com.example.manazerfinancii.databaza.PolozkaDao$getAllPolozkyByBetweenDate(kotlin.Int, java.util.Date, java.util.Date)/typ">typ</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.example.manazerfinancii.databaza.PolozkaDao$getAllPolozkyByBetweenDate(kotlin.Int, java.util.Date, java.util.Date)/prvyDatum">prvyDatum</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/java/util/Date.html"><span class="identifier">Date</span></a><span class="symbol">, </span><span class="identifier" id="com.example.manazerfinancii.databaza.PolozkaDao$getAllPolozkyByBetweenDate(kotlin.Int, java.util.Date, java.util.Date)/druhyDatum">druhyDatum</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/java/util/Date.html"><span class="identifier">Date</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-polozka/index.html"><span class="identifier">Polozka</span></a><span class="symbol">&gt;</span></code>
+<p>Vrátenie všetkých položiek na základe typu a že dátum patrí medzi interval dátumov z parametra</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-all-polozky-by-category.html">getAllPolozkyByCategory</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getAllPolozkyByCategory</span><span class="symbol">(</span><span class="identifier" id="com.example.manazerfinancii.databaza.PolozkaDao$getAllPolozkyByCategory(kotlin.Int, kotlin.Int)/typ">typ</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.example.manazerfinancii.databaza.PolozkaDao$getAllPolozkyByCategory(kotlin.Int, kotlin.Int)/kategoria">kategoria</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-polozka/index.html"><span class="identifier">Polozka</span></a><span class="symbol">&gt;</span></code>
+<p>Vrátenie všetkých položiek na kategórie a typu položky</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-all-polozky-by-prostriedok.html">getAllPolozkyByProstriedok</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getAllPolozkyByProstriedok</span><span class="symbol">(</span><span class="identifier" id="com.example.manazerfinancii.databaza.PolozkaDao$getAllPolozkyByProstriedok(kotlin.Int, kotlin.String)/typ">typ</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.example.manazerfinancii.databaza.PolozkaDao$getAllPolozkyByProstriedok(kotlin.Int, kotlin.String)/prostriedok">prostriedok</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-polozka/index.html"><span class="identifier">Polozka</span></a><span class="symbol">&gt;</span></code>
+<p>Vrátenie všetkých položiek na základe prostriedku a typu položky</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-all-polozky-mesiac.html">getAllPolozkyMesiac</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getAllPolozkyMesiac</span><span class="symbol">(</span><span class="identifier" id="com.example.manazerfinancii.databaza.PolozkaDao$getAllPolozkyMesiac(kotlin.Int)/typ">typ</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-polozka/index.html"><span class="identifier">Polozka</span></a><span class="symbol">&gt;</span></code>
+<p>Vrátenie všetkých položiek na základe typu a ktoré boli pridané posledný mesiac</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-all-polozky-rok.html">getAllPolozkyRok</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getAllPolozkyRok</span><span class="symbol">(</span><span class="identifier" id="com.example.manazerfinancii.databaza.PolozkaDao$getAllPolozkyRok(kotlin.Int)/typ">typ</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-polozka/index.html"><span class="identifier">Polozka</span></a><span class="symbol">&gt;</span></code>
+<p>Vrátenie všetkých položiek na základe typu a ktoré boli pridané posledný rok</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-all-polozky-tyzden.html">getAllPolozkyTyzden</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getAllPolozkyTyzden</span><span class="symbol">(</span><span class="identifier" id="com.example.manazerfinancii.databaza.PolozkaDao$getAllPolozkyTyzden(kotlin.Int)/typ">typ</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-polozka/index.html"><span class="identifier">Polozka</span></a><span class="symbol">&gt;</span></code>
+<p>Vrátenie všetkých položiek na základe typu a ktoré boli pridané posledný týždeň</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-all-setrenia.html">getAllSetrenia</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getAllSetrenia</span><span class="symbol">(</span><span class="identifier" id="com.example.manazerfinancii.databaza.PolozkaDao$getAllSetrenia(java.util.Date)/datum">datum</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/java/util/Date.html"><span class="identifier">Date</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-polozka/index.html"><span class="identifier">Polozka</span></a><span class="symbol">&gt;</span></code>
+<p>Vrátenie všetkých šetrení, ktoré patria k aktuálnemu šetreniu</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-last-use-bank-ucet.html">getLastUseBankUcet</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getLastUseBankUcet</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://developer.android.com/reference/java/util/Date.html"><span class="identifier">Date</span></a></code>
+<p>Vrátenie posledného manipulovania s bankovým účtom</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-last-use-penazenka.html">getLastUsePenazenka</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getLastUsePenazenka</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://developer.android.com/reference/java/util/Date.html"><span class="identifier">Date</span></a></code>
+<p>Vrátenie posledného manipulovania s peňaženkou</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-sum-bank-ucet-prijmy.html">getSumBankUcetPrijmy</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getSumBankUcetPrijmy</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code>
+<p>Vrátenie celkovej sumy prijmov na základe prostriedku bankový účet</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-sum-bank-ucet-vydavky.html">getSumBankUcetVydavky</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getSumBankUcetVydavky</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code>
+<p>Vrátenie celkovej sumy výdavkov na základe prostriedku bankový účet</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-sum-penazenka-prijmy.html">getSumPenazenkaPrijmy</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getSumPenazenkaPrijmy</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code>
+<p>Vrátenie celkovej sumy prijmov na základe prostriedku peňaženka</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-sum-penazenka-vydavky.html">getSumPenazenkaVydavky</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getSumPenazenkaVydavky</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code>
+<p>Vrátenie celkovej sumy výdavkov na základe prostriedku peňaženka</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-sum-prijmy-month.html">getSumPrijmyMonth</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getSumPrijmyMonth</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code>
+<p>Vrátenie celkovej sumy mesačných príjmov aktuálneho mesiaca</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-sum-setrenia.html">getSumSetrenia</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getSumSetrenia</span><span class="symbol">(</span><span class="identifier" id="com.example.manazerfinancii.databaza.PolozkaDao$getSumSetrenia(java.util.Date)/datum">datum</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/java/util/Date.html"><span class="identifier">Date</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code>
+<p>Vrátenie celkovej sumy našetrených peňazí</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-sum-vydavky-month.html">getSumVydavkyMonth</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getSumVydavkyMonth</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code>
+<p>Vrátenie celkovej sumy mesačných výdavkov aktuálneho mesiaca</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="write-polozka.html">writePolozka</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">writePolozka</span><span class="symbol">(</span><span class="identifier" id="com.example.manazerfinancii.databaza.PolozkaDao$writePolozka(com.example.manazerfinancii.databaza.Polozka)/polozka">polozka</span><span class="symbol">:</span>&nbsp;<a href="../-polozka/index.html"><span class="identifier">Polozka</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Vloženie položky do tabuľky</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
